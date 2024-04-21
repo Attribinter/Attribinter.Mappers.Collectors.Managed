@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+
+        <RootNamespace>Attribinter.Mappers.Collectors.Managed</RootNamespace>
+
+        <Title>Attribinter.Mappers.Collectors.Managed.Core</Title>
+        <Description>Defines the core definitions of managed Attribinter mapping-collectors.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Attribinter.Mappers.Collectors.Abstractions" />
+    </ItemGroup>
+
+</Project>
