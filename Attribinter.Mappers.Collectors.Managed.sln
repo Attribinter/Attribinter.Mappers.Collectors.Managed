@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11F6A76C-9850-4C34-BA32-4F885DD9AA6B}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		tests\.editorconfig = tests\.editorconfig
 		Directory.Build.props = Directory.Build.props
 		src\Directory.Build.props = src\Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
@@ -21,7 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attribinter.Mappers.Collect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attribinter.Mappers.Collectors.Managed.IntegrationTests", "tests\integration\Attribinter.Mappers.Collectors.Managed.IntegrationTests\Attribinter.Mappers.Collectors.Managed.IntegrationTests.csproj", "{BC285F81-225E-4D54-94C8-2B84AEB1D50F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Mappers.Collectors.Managed.UnitTests", "tests\unit\Attribinter.Mappers.Collectors.Managed.UnitTests\Attribinter.Mappers.Collectors.Managed.UnitTests.csproj", "{F406E979-058B-4CA1-970E-F6B52B1F1B24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attribinter.Mappers.Collectors.Managed.UnitTests", "tests\unit\Attribinter.Mappers.Collectors.Managed.UnitTests\Attribinter.Mappers.Collectors.Managed.UnitTests.csproj", "{F406E979-058B-4CA1-970E-F6B52B1F1B24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
