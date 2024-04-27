@@ -2,7 +2,9 @@
 
 using Moq;
 
-internal interface IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> where TParameterFactory : class where TRecorderFactory : class
+internal interface IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>
+    where TParameterFactory : class
+    where TRecorderFactory : class
 {
     public abstract IManagedParameterMappingRegistratorContext<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> Sut { get; }
 

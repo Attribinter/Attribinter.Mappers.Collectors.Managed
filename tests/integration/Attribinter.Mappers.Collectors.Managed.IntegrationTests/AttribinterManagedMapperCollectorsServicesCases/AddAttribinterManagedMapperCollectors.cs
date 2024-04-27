@@ -11,8 +11,6 @@ using Xunit;
 
 public sealed class AddAttribinterManagedMapperCollectors
 {
-    private static IServiceCollection Target(IServiceCollection services) => AttribinterManagedMapperCollectorsServices.AddAttribinterManagedMapperCollectors(services);
-
     [Fact]
     public void NullServiceCollection_ArgumentNullException()
     {
@@ -37,8 +35,11 @@ public sealed class AddAttribinterManagedMapperCollectors
     [Fact]
     public void IManagedParameterMappingRegistratorContextFactory_ServiceCanBeResolved() => ServiceCanBeResolved<IManagedParameterMappingRegistratorContextFactory>();
 
+    private static IServiceCollection Target(IServiceCollection services) => AttribinterManagedMapperCollectorsServices.AddAttribinterManagedMapperCollectors(services);
+
     [AssertionMethod]
-    private static void ServiceCanBeResolved<TService>() where TService : notnull
+    private static void ServiceCanBeResolved<TService>()
+        where TService : notnull
     {
         HostBuilder host = new();
 

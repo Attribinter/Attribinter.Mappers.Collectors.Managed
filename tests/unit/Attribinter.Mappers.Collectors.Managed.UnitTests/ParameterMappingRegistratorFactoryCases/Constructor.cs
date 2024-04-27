@@ -8,8 +8,6 @@ using Xunit;
 
 public sealed class Constructor
 {
-    private static ParameterMappingRegistratorFactory Target(IManagedParameterMappingRegistratorContextFactory contextFactory) => new(contextFactory);
-
     [Fact]
     public void NullContextFactory_ThrowsArgumentNullException()
     {
@@ -25,4 +23,6 @@ public sealed class Constructor
 
         Assert.NotNull(result);
     }
+
+    private static ParameterMappingRegistratorFactory Target(IManagedParameterMappingRegistratorContextFactory contextFactory) => new(contextFactory);
 }

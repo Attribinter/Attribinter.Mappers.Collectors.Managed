@@ -4,8 +4,6 @@ using Xunit;
 
 public sealed class Collector
 {
-    private static IParameterMappingCollector<TParameter, TRecord, TData> Target<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> fixture) where TParameterFactory : class where TRecorderFactory : class => fixture.Sut.Collector;
-
     [Fact]
     public void ReturnsSameAsConstructedWith()
     {
@@ -14,5 +12,12 @@ public sealed class Collector
         var result = Target(fixture);
 
         Assert.Same(fixture.CollectorMock.Object, result);
+    }
+
+    private static IParameterMappingCollector<TParameter, TRecord, TData> Target<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> fixture)
+        where TParameterFactory : class
+        where TRecorderFactory : class
+    {
+        return fixture.Sut.Collector;
     }
 }

@@ -4,7 +4,9 @@ using Moq;
 
 internal static class ContextFixtureFactory
 {
-    public static IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> Create<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>() where TParameterFactory : class where TRecorderFactory : class
+    public static IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> Create<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>()
+        where TParameterFactory : class
+        where TRecorderFactory : class
     {
         IManagedParameterMappingRegistratorContextFactory factory = new ManagedParameterMappingRegistratorContextFactory();
 
@@ -18,7 +20,9 @@ internal static class ContextFixtureFactory
         return new ContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(sut, collectorMock, parameterFactoryMock, recorderFactoryMock);
     }
 
-    private sealed class ContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> : IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> where TParameterFactory : class where TRecorderFactory : class
+    private sealed class ContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> : IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>
+        where TParameterFactory : class
+        where TRecorderFactory : class
     {
         private readonly IManagedParameterMappingRegistratorContext<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> Sut;
 
