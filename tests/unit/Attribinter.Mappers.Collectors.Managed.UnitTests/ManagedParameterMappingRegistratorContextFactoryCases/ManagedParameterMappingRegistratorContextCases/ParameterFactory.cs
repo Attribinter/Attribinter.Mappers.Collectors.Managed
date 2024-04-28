@@ -4,8 +4,6 @@ using Xunit;
 
 public sealed class ParameterFactory
 {
-    private static TParameterFactory Target<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> fixture) where TParameterFactory : class where TRecorderFactory : class => fixture.Sut.ParameterFactory;
-
     [Fact]
     public void ReturnsSameAsConstructedWith()
     {
@@ -14,5 +12,12 @@ public sealed class ParameterFactory
         var result = Target(fixture);
 
         Assert.Same(fixture.ParameterFactoryMock.Object, result);
+    }
+
+    private static TParameterFactory Target<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(IContextFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> fixture)
+        where TParameterFactory : class
+        where TRecorderFactory : class
+    {
+        return fixture.Sut.ParameterFactory;
     }
 }

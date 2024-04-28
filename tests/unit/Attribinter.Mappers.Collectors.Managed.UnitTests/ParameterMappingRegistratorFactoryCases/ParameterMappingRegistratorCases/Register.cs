@@ -8,8 +8,6 @@ using Xunit;
 
 public sealed class Register
 {
-    private static void Target<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(IRegistratorFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> fixture, IParameterMappingCollector<TParameter, TRecord, TData> collector) where TParameterFactory : class where TRecorderFactory : class => fixture.Sut.Register(collector);
-
     [Fact]
     public void NullCollector_ThrowsArgumentNullException()
     {
@@ -35,5 +33,12 @@ public sealed class Register
 
         fixture.ManagedRegistratorMock.Verify((registrator) => registrator.Register(context), Times.Once());
         fixture.ManagedRegistratorMock.VerifyNoOtherCalls();
+    }
+
+    private static void Target<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>(IRegistratorFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> fixture, IParameterMappingCollector<TParameter, TRecord, TData> collector)
+        where TParameterFactory : class
+        where TRecorderFactory : class
+    {
+        fixture.Sut.Register(collector);
     }
 }

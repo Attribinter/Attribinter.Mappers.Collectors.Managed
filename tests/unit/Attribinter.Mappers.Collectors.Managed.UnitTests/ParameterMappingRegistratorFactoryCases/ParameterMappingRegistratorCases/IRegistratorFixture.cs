@@ -2,7 +2,9 @@
 
 using Moq;
 
-internal interface IRegistratorFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory> where TParameterFactory : class where TRecorderFactory : class
+internal interface IRegistratorFixture<TParameter, TRecord, TData, TParameterFactory, TRecorderFactory>
+    where TParameterFactory : class
+    where TRecorderFactory : class
 {
     public abstract IParameterMappingRegistrator<TParameter, TRecord, TData> Sut { get; }
 
