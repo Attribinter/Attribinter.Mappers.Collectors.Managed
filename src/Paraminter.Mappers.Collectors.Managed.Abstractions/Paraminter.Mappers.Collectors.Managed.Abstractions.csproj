@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+
+        <RootNamespace>Paraminter.Mappers.Collectors.Managed</RootNamespace>
+
+        <Title>Paraminter.Mappers.Collectors.Managed.Abstractions</Title>
+        <Description>Provides abstractions related to managed Paraminter mapping-collectors.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Paraminter.Mappers.Collectors.Managed.Core\Paraminter.Mappers.Collectors.Managed.Core.csproj" />
+    </ItemGroup>
+
+</Project>

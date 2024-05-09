@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11F6A76C-9850-4C34-BA32-4F885DD9AA6B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		tests\.editorconfig = tests\.editorconfig
+		Directory.Build.props = Directory.Build.props
+		src\Directory.Build.props = src\Directory.Build.props
+		tests\Directory.Build.props = tests\Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Mappers.Collectors.Managed.Core", "src\Paraminter.Mappers.Collectors.Managed.Core\Paraminter.Mappers.Collectors.Managed.Core.csproj", "{47CD28B1-5034-440E-9418-9A66DF20C590}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Mappers.Collectors.Managed.Abstractions", "src\Paraminter.Mappers.Collectors.Managed.Abstractions\Paraminter.Mappers.Collectors.Managed.Abstractions.csproj", "{FDC304E7-ECE3-4C8F-82BE-25E00E9DD7D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Mappers.Collectors.Managed", "src\Paraminter.Mappers.Collectors.Managed\Paraminter.Mappers.Collectors.Managed.csproj", "{0D2F83A1-F9B2-4752-A2D5-261373EB7030}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Mappers.Collectors.Managed.DependencyInjection", "src\Paraminter.Mappers.Collectors.Managed.DependencyInjection\Paraminter.Mappers.Collectors.Managed.DependencyInjection.csproj", "{D3ADCB32-DD68-4947-B489-5D9B0BE1A8FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Mappers.Collectors.Managed.IntegrationTests", "tests\integration\Paraminter.Mappers.Collectors.Managed.IntegrationTests\Paraminter.Mappers.Collectors.Managed.IntegrationTests.csproj", "{B8A37FAA-340C-42D9-BD25-719E61790241}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Mappers.Collectors.Managed.UnitTests", "tests\unit\Paraminter.Mappers.Collectors.Managed.UnitTests\Paraminter.Mappers.Collectors.Managed.UnitTests.csproj", "{9B49AAFA-9F75-46DA-BC63-3696D81595DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47CD28B1-5034-440E-9418-9A66DF20C590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CD28B1-5034-440E-9418-9A66DF20C590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CD28B1-5034-440E-9418-9A66DF20C590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CD28B1-5034-440E-9418-9A66DF20C590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC304E7-ECE3-4C8F-82BE-25E00E9DD7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC304E7-ECE3-4C8F-82BE-25E00E9DD7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC304E7-ECE3-4C8F-82BE-25E00E9DD7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC304E7-ECE3-4C8F-82BE-25E00E9DD7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2F83A1-F9B2-4752-A2D5-261373EB7030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2F83A1-F9B2-4752-A2D5-261373EB7030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2F83A1-F9B2-4752-A2D5-261373EB7030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2F83A1-F9B2-4752-A2D5-261373EB7030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3ADCB32-DD68-4947-B489-5D9B0BE1A8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ADCB32-DD68-4947-B489-5D9B0BE1A8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ADCB32-DD68-4947-B489-5D9B0BE1A8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ADCB32-DD68-4947-B489-5D9B0BE1A8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A37FAA-340C-42D9-BD25-719E61790241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A37FAA-340C-42D9-BD25-719E61790241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A37FAA-340C-42D9-BD25-719E61790241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A37FAA-340C-42D9-BD25-719E61790241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B49AAFA-9F75-46DA-BC63-3696D81595DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B49AAFA-9F75-46DA-BC63-3696D81595DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B49AAFA-9F75-46DA-BC63-3696D81595DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B49AAFA-9F75-46DA-BC63-3696D81595DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8EDF550-7B93-4D41-96D3-A3BDA9FC61C3}
+	EndGlobalSection
+EndGlobal
