@@ -8,6 +8,8 @@ using Xunit;
 
 public sealed class Create
 {
+    private readonly IFactoryFixture Fixture = FactoryFixtureFactory.Create();
+
     [Fact]
     public void NullManagedRegistrator_ThrowsArgumentNullException()
     {
@@ -41,6 +43,4 @@ public sealed class Create
     }
 
     private IParameterMappingRegistrator<TParameter, TRecord, TArgumentData> Target<TParameter, TRecord, TArgumentData, TParameterFactory, TRecorderFactory>(IManagedParameterMappingRegistrator<TParameter, TRecord, TArgumentData, TParameterFactory, TRecorderFactory> managedRegistrator, TParameterFactory parameterFactory, TRecorderFactory recorderFactory) => Fixture.Sut.Create(managedRegistrator, parameterFactory, recorderFactory);
-
-    private readonly IFactoryFixture Fixture = FactoryFixtureFactory.Create();
 }
