@@ -7,8 +7,8 @@
 
         <Owners>Paraminter</Owners>
         <Authors>ErikWe</Authors>
-        <PackageProjectUrl>https://github.com/Paraminter/Paraminter.Mappers.Collectors.Managed</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/Paraminter/Paraminter.Mappers.Collectors.Managed</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Paraminter/Paraminter.Recorders.Mappers.Collectors.Managed</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Paraminter/Paraminter.Recorders.Mappers.Collectors.Managed</RepositoryUrl>
         <PackageReadmeFile>README.nupkg.md</PackageReadmeFile>
         <PackageIcon>Logo.png</PackageIcon>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
