@@ -1,4 +1,4 @@
-# Paraminter.Mappers.Collectors.Managed
+# Paraminter.Recorders.Mappers.Collectors.Managed
 
 Adds managed mapping-collectors to `Paraminter`.
 
