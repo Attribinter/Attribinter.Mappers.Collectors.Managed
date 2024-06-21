@@ -22,7 +22,7 @@ public sealed class AddParaminterManagedRecorderMapperCollectors
     private static void Target(
         IServiceCollection services)
     {
-        Services.AddParaminterManagedRecorderMapperCollectors(services);
+        ManagedRecorderMapperCollectorServices.AddParaminterManagedRecorderMapperCollectors(services);
     }
 
     private static void ServiceCanBeResolved<TService>()
