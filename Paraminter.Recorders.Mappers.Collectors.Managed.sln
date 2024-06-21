@@ -33,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net", "Net", "{93BBEECE-C365-4ED8-A7B5-633B44F4F77C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_Services", "tests\integration\DependencyInjection\Net\Services\IT_Services.csproj", "{0D5DC73B-6ABF-4FEA-8887-5705AA008D14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_ManagedRecorderMapperCollectorServices", "tests\integration\DependencyInjection\Net\ManagedRecorderMapperCollectorServices\IT_ManagedRecorderMapperCollectorServices.csproj", "{0D5DC73B-6ABF-4FEA-8887-5705AA008D14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{B298F376-3135-4D5C-AD85-211FE73BCC4B}"
 EndProject
@@ -49,7 +49,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net", "Net", "{C568252D-FA9A-49FD-B301-42AD43439902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_Services", "tests\unit\DependencyInjection\Net\Services\UT_Services.csproj", "{FD16ADAE-13E9-4A53-95BB-7E1315D59BA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_ManagedRecorderMapperCollectorServices", "tests\unit\DependencyInjection\Net\ManagedRecorderMapperCollectorServices\UT_ManagedRecorderMapperCollectorServices.csproj", "{FD16ADAE-13E9-4A53-95BB-7E1315D59BA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,9 +101,6 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E8EDF550-7B93-4D41-96D3-A3BDA9FC61C3}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BC60C3A4-7210-43FC-82C4-7FA760731C65} = {CC003AD9-1DD2-4A53-AA63-D9714FC617BB}
 		{4759306B-37A2-4902-A017-94D4EF2EA695} = {CC003AD9-1DD2-4A53-AA63-D9714FC617BB}
@@ -122,5 +119,8 @@ Global
 		{113E70ED-0B25-4E2A-9363-A2124C0E7008} = {B298F376-3135-4D5C-AD85-211FE73BCC4B}
 		{C568252D-FA9A-49FD-B301-42AD43439902} = {113E70ED-0B25-4E2A-9363-A2124C0E7008}
 		{FD16ADAE-13E9-4A53-95BB-7E1315D59BA5} = {C568252D-FA9A-49FD-B301-42AD43439902}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8EDF550-7B93-4D41-96D3-A3BDA9FC61C3}
 	EndGlobalSection
 EndGlobal
