@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>Paraminter.Recorders.Mappers.Collectors.Managed.Abstractions</AssemblyName>
+
         <PackageId>Paraminter.Recorders.Mappers.Collectors.Managed.Abstractions</PackageId>
         <Description>Provides abstractions related to managed Paraminter mapping-collectors.</Description>
     </PropertyGroup>
