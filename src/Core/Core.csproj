@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>Paraminter.Recorders.Mappers.Collectors.Managed.Core</PackageId>
-        <Description>Defines the core definitions of managed Paraminter mapping-collectors.</Description>
+        <Description>Defines the core components of managed Paraminter mapping-collectors.</Description>
     </PropertyGroup>
 
     <ItemGroup>

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>Paraminter.Recorders.Mappers.Collectors.Managed</PackageId>
-        <Description>Adds managed mapping-collectors to Paraminter.</Description>
+        <Description>Provides general implementations of services related to managed mapping-collectors to Paraminter.</Description>
     </PropertyGroup>
 
     <ItemGroup>

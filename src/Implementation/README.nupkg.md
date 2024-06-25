@@ -1,5 +1,5 @@
 # Paraminter.Recorders.Mappers.Collectors.Managed
 
-Adds managed mapping-collectors to `Paraminter`.
+Provides general implementations of services related to managed `Paraminter` mapping-collectors.
 
 See [GitHub](https://github.com/Paraminter/Paraminter.Recorders.Mappers.Collectors.Managed) for more information.
