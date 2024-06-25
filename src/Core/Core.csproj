@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <AssemblyName>Paraminter.Recorders.Mappers.Collectors.Managed.Core</AssemblyName>
@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Paraminter.Recorders.Mappers.Collectors.Abstractions" />
+        <PackageReference Include="Paraminter.Recorders.Mappers.Collectors.Core" />
     </ItemGroup>
 
 </Project>
