@@ -1,12 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>Paraminter.Recorders.Mappers.Collectors.Managed.Core</AssemblyName>
+
         <PackageId>Paraminter.Recorders.Mappers.Collectors.Managed.Core</PackageId>
         <Description>Defines the core components of managed Paraminter mapping-collectors.</Description>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Paraminter.Recorders.Mappers.Collectors.Abstractions" />
+        <PackageReference Include="Paraminter.Recorders.Mappers.Collectors.Core" />
     </ItemGroup>
 
 </Project>
